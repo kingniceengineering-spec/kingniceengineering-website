@@ -3,18 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>King Nice Engineering | MEP Contracting & General Supplier</title>
-    <!-- Standard Free FontAwesome Pack -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <title>King Nice Engineering | Industrial MEP Contracting & Global Supplies</title>
+    <!-- FontAwesome Pro Free CDN -->
+    <link rel="stylesheet" href="https://cloudflare.com"/>
+    <!-- Luxury Brand Fonts -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Cinzel:wght@700;900&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
     <style>
-        /* COLOR THEME VARIABLES */
+        /* LUXURY ENTERPRISE DESIGN SYSTEMS */
         :root {
-            --navy-dark: #07162c;
-            --navy-main: #002147;
-            --gold-solid: #dfa117;
-            --light-bg: #f8fafc;
-            --white: #ffffff;
-            --text-dark: #1e293b;
+            --navy-deep: #030d1a;
+            --navy-brand: #002147;
+            --navy-light: #0b2545;
+            --gold-base: #dfa117;
+            --gold-gradient: linear-gradient(135deg, #ffd700 0%, #dfa117 50%, #b8810b 100%);
+            --glass-white: rgba(255, 255, 255, 0.03);
+            --glass-border: rgba(255, 255, 255, 0.08);
+            --text-light: #f1f5f9;
+            --text-dark: #0f172a;
             --text-muted: #64748b;
         }
 
@@ -22,7 +29,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: Arial, sans-serif;
+            font-family: 'Plus Jakarta Sans', sans-serif;
         }
 
         html {
@@ -30,98 +37,108 @@
         }
 
         body {
-            background-color: var(--light-bg);
-            color: var(--text-dark);
-            line-height: 1.6;
+            background-color: #020813;
+            color: var(--text-light);
+            overflow-x: hidden;
         }
 
-        /* TOP CONATCT BAR */
-        .top-bar {
-            background-color: var(--navy-dark);
-            color: var(--white);
-            padding: 12px 8%;
+        /* PREMIUM GLASS TOPPING INFOBAR */
+        .top-ticker {
+            background-color: var(--navy-deep);
+            color: #cbd5e1;
+            padding: 14px 8%;
             display: flex;
             justify-content: space-between;
             align-items: center;
             font-size: 0.85rem;
-            border-bottom: 3px solid var(--gold-solid);
-            flex-wrap: wrap;
+            border-bottom: 2px solid rgba(223, 161, 23, 0.3);
+            font-weight: 600;
         }
 
-        .top-bar .contact-info a {
-            color: var(--white);
+        .top-ticker a {
+            color: var(--text-light);
             text-decoration: none;
             margin-right: 25px;
-            font-weight: bold;
+            transition: 0.3s;
         }
 
-        .top-bar .contact-info a:hover {
-            color: var(--gold-solid);
+        .top-ticker a:hover {
+            color: var(--gold-base);
         }
 
-        .top-bar .ntn-badge {
-            background-color: var(--gold-solid);
-            color: var(--navy-dark);
-            padding: 4px 14px;
-            border-radius: 4px;
-            font-weight: bold;
+        .top-ticker .ntn-tag {
+            background: var(--gold-gradient);
+            color: var(--navy-deep);
+            padding: 5px 16px;
+            border-radius: 50px;
+            font-weight: 800;
+            box-shadow: 0 0 15px rgba(223, 161, 23, 0.4);
             letter-spacing: 0.5px;
         }
 
-        /* NAVIGATION HEADER */
+        /* GLOWING STICKY NAVIGATION CONTROLLER */
         header {
-            background-color: var(--white);
-            padding: 15px 8%;
+            background: rgba(3, 13, 26, 0.85);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            padding: 20px 8%;
             display: flex;
             justify-content: space-between;
             align-items: center;
             position: sticky;
             top: 0;
             z-index: 1000;
-            box-shadow: 0 4px 25px rgba(0,0,0,0.06);
+            border-bottom: 1px solid var(--glass-border);
         }
 
-        .brand-logo {
+        .brand-core {
             display: flex;
             align-items: center;
             text-decoration: none;
         }
 
-        .logo-icon-wrapper {
+        .crown-gfx {
             margin-right: 15px;
+            position: relative;
         }
 
-        .logo-icon-wrapper i {
-            font-size: 2.2rem;
-            color: var(--gold-solid);
+        .crown-gfx i {
+            font-size: 2.5rem;
+            background: var(--gold-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            filter: drop-shadow(0 0 8px rgba(223, 161, 23, 0.5));
         }
 
-        .brand-text h1 {
-            color: var(--navy-main);
-            font-size: 2rem;
-            line-height: 0.9;
-            letter-spacing: 2px;
+        .brand-titles h1 {
+            font-family: 'Cinzel', serif;
+            color: var(--white);
+            font-size: 2.5rem;
+            line-height: 0.85;
+            letter-spacing: 4px;
+            font-weight: 900;
+            background: linear-gradient(to right, #fff, #94a3b8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .brand-titles h2 {
+            color: #f8fafc;
+            font-size: 0.95rem;
             font-weight: 800;
-        }
-
-        .brand-text h2 {
-            color: var(--navy-dark);
-            font-size: 0.9rem;
-            font-weight: bold;
-            letter-spacing: 1px;
+            letter-spacing: 1.5px;
             text-transform: uppercase;
-            margin-top: 4px;
+            margin-top: 5px;
         }
 
-        .brand-text span {
-            color: var(--text-muted);
+        .brand-titles span {
+            color: var(--gold-base);
             font-size: 0.65rem;
             text-transform: uppercase;
-            letter-spacing: 1px;
+            letter-spacing: 2px;
             display: block;
-            border-top: 1px solid #e2e8f0;
-            padding-top: 2px;
-            margin-top: 2px;
+            font-weight: 700;
+            margin-top: 3px;
         }
 
         nav ul {
@@ -130,249 +147,191 @@
         }
 
         nav ul li {
-            margin-left: 30px;
+            margin-left: 35px;
         }
 
         nav ul li a {
             text-decoration: none;
-            color: var(--navy-main);
-            font-weight: bold;
-            font-size: 0.9rem;
-            text-transform: uppercase;
-        }
-
-        nav ul li a:hover {
-            color: var(--gold-solid);
-        }
-
-        /* HERO MAIN SECTION */
-        .hero {
-            background: linear-gradient(rgba(0, 33, 71, 0.9), rgba(7, 22, 44, 0.95)), 
-                        url('https://unsplash.com') no-repeat center center/cover;
-            color: var(--white);
-            padding: 130px 8% 110px;
-            text-align: center;
-        }
-
-        .hero .tagline {
-            font-size: 0.9rem;
-            text-transform: uppercase;
-            letter-spacing: 4px;
-            color: var(--gold-solid);
-            font-weight: bold;
-            margin-bottom: 15px;
-        }
-
-        .hero h2 {
-            font-size: 3.2rem;
-            font-weight: 800;
-            line-height: 1.2;
-            margin-bottom: 20px;
-        }
-
-        .hero h2 span {
-            color: var(--gold-solid);
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-            max-width: 850px;
-            margin: 0 auto 40px;
             color: #cbd5e1;
-        }
-
-        .cta-btn {
-            display: inline-block;
-            background-color: var(--gold-solid);
-            color: var(--navy-dark);
-            padding: 15px 40px;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 4px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            transition: 0.3s;
             text-transform: uppercase;
             letter-spacing: 1px;
-            box-shadow: 0 5px 20px rgba(223, 161, 23, 0.4);
+            position: relative;
+        }
+
+        nav ul li a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background: var(--gold-gradient);
             transition: 0.3s;
         }
 
-        .cta-btn:hover {
-            background-color: var(--white);
-            color: var(--navy-main);
-            transform: translateY(-3px);
+        nav ul li a:hover {
+            color: var(--gold-base);
         }
 
-        /* CORE SECTIONS */
-        section {
-            padding: 80px 8%;
+        nav ul li a:hover::after {
+            width: 100%;
         }
 
-        .section-header {
+        /* KINETIC HERO MATRIX WITH AMBIENT GLOW */
+        .hero-engine {
+            background: linear-gradient(rgba(2, 8, 19, 0.85), rgba(3, 13, 26, 0.98)), 
+                        url('https://unsplash.com') no-repeat center center/cover;
+            padding: 180px 8% 150px;
             text-align: center;
-            margin-bottom: 60px;
-        }
-
-        .section-header h2 {
-            color: var(--navy-main);
-            font-size: 2.4rem;
-            font-weight: 800;
             position: relative;
-            padding-bottom: 15px;
-            display: inline-block;
-            text-transform: uppercase;
         }
 
-        .section-header h2::after {
+        .hero-engine::before {
             content: '';
-            width: 80px;
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 400px;
+            height: 400px;
+            background: rgba(223, 161, 23, 0.08);
+            border-radius: 50%;
+            filter: blur(120px);
+            pointer-events: none;
+        }
+
+        .hero-engine .corporate-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--glass-border);
+            padding: 8px 24px;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: var(--gold-base);
+            margin-bottom: 25px;
+            font-weight: bold;
+        }
+
+        .hero-engine h2 {
+            font-family: 'Cinzel', serif;
+            font-size: 4rem;
+            font-weight: 900;
+            line-height: 1.15;
+            margin-bottom: 25px;
+            letter-spacing: 2px;
+        }
+
+        .hero-engine h2 span {
+            background: var(--gold-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: block;
+            margin-top: 10px;
+        }
+
+        .hero-engine p {
+            font-size: 1.25rem;
+            max-width: 850px;
+            margin: 0 auto 45px;
+            color: #94a3b8;
+            font-weight: 400;
+        }
+
+        .premium-btn {
+            display: inline-block;
+            background: var(--gold-gradient);
+            color: var(--navy-deep);
+            padding: 18px 45px;
+            text-decoration: none;
+            font-weight: 800;
+            border-radius: 4px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            box-shadow: 0 8px 30px rgba(223, 161, 23, 0.35);
+            transition: 0.4s ease;
+        }
+
+        .premium-btn:hover {
+            transform: translateY(-4px) scale(1.02);
+            box-shadow: 0 12px 40px rgba(223, 161, 23, 0.5);
+            background: #ffffff;
+            color: var(--navy-brand);
+        }
+
+        /* ARCHITECTURAL CORE SECTIONS */
+        section {
+            padding: 120px 8%;
+            position: relative;
+        }
+
+        .sec-head {
+            text-align: center;
+            margin-bottom: 80px;
+        }
+
+        .sec-head h2 {
+            font-family: 'Cinzel', serif;
+            font-size: 2.8rem;
+            font-weight: 900;
+            letter-spacing: 1px;
+            position: relative;
+            padding-bottom: 25px;
+            background: linear-gradient(to right, #fff 30%, #94a3b8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .sec-head h2::after {
+            content: '';
+            width: 100px;
             height: 4px;
-            background-color: var(--gold-solid);
+            background: var(--gold-gradient);
             position: absolute;
             bottom: 0;
             left: 50%;
             transform: translateX(-50%);
+            border-radius: 2px;
         }
 
-        .section-header p {
-            color: var(--text-muted);
-            margin-top: 15px;
-            font-size: 1.1rem;
+        .sec-head p {
+            color: #64748b;
+            margin-top: 25px;
+            font-size: 1.2rem;
+            font-weight: 600;
         }
 
-        /* SERVICES GRID */
-        .services-grid {
+        /* ULTRA LUXURY CARD MECHANICS */
+        .mep-matrix {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 40px;
         }
 
-        .service-card {
-            background-color: var(--white);
-            padding: 40px 30px;
-            border-radius: 8px;
-            box-shadow: 0 10px 35px rgba(0,0,0,0.03);
-            border-top: 5px solid var(--navy-main);
-            transition: 0.3s ease;
+        .mep-gate {
+            background: var(--glass-white);
+            border: 1px solid var(--glass-border);
+            padding: 50px 40px;
+            border-radius: 12px;
+            position: relative;
+            overflow: hidden;
+            transition: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
         }
 
-        .service-card:hover {
-            transform: translateY(-10px);
-            border-top-color: var(--gold-solid);
-            box-shadow: 0 20px 45px rgba(0,0,0,0.09);
+        .mep-gate::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: linear-gradient(135deg, rgba(223,161,23,0.05) 0%, transparent 100%);
+            opacity: 0;
+            transition: 0.4s;
         }
 
-        .service-card .icon-box {
-            width: 65px;
-            height: 65px;
-            background-color: rgba(0, 33, 71, 0.05);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 25px;
-        }
-
-        .service-card:hover .icon-box {
-            background-color: var(--gold-solid);
-        }
-
-        .service-card .icon-box i {
-            font-size: 1.8rem;
-            color: var(--navy-main);
-        }
-
-        .service-card h3 {
-            color: var(--navy-main);
-            font-size: 1.35rem;
-            margin-bottom: 15px;
-            font-weight: bold;
-            text-transform: uppercase;
-        }
-
-        .service-card ul {
-            list-style: none;
-        }
-
-        .service-card ul li {
-            font-size: 0.95rem;
-            color: var(--text-muted);
-            margin-bottom: 10px;
-            display: flex;
-            align-items: center;
-        }
-
-        .service-card ul li i {
-            color: var(--gold-solid);
-            margin-right: 12px;
-        }
-
-        /* SUPPLIER SECTION */
-        .supplier-section {
-            background-color: var(--white);
-        }
-
-        .products-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 25px;
-        }
-
-        .product-card {
-            background-color: var(--light-bg);
-            padding: 25px 20px;
-            border-radius: 8px;
-            text-align: center;
-            border: 1px solid #e2e8f0;
-            transition: 0.3s;
-        }
-
-        .product-card:hover {
-            border-color: var(--gold-solid);
-            background-color: var(--white);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.06);
-        }
-
-        .product-card i {
-            font-size: 2.2rem;
-            color: var(--navy-main);
-            margin-bottom: 15px;
-        }
-
-        .product-card h4 {
-            color: var(--navy-dark);
-            font-weight: bold;
-            font-size: 1.1rem;
-            text-transform: uppercase;
-        }
-
-        /* SPLIT SECTIONS */
-        .split-container {
-            display: grid;
-            grid-template-columns: 1.2fr 1fr;
-            gap: 50px;
-            align-items: start;
-        }
-
-        .benefits-list {
-            list-style: none;
-            margin-top: 20px;
-        }
-
-        .benefits-list li {
-            display: flex;
-            align-items: flex-start;
-            margin-bottom: 20px;
-            background: var(--white);
-            padding: 15px 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.01);
-            border-left: 4px solid var(--navy-main);
-        }
-
-        .benefits-list li i {
-            color: var(--gold-solid);
-            font-size: 1.3rem;
-            margin-right: 15px;
-        }
-
-        .benefits-list li h5 {
-		
+        .mep-gate:hover {
+            transform: translateY(-12px);
+            border-color: rgba(223, 161, 23, 0.4);
+			
