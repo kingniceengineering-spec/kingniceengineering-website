@@ -1,1 +1,356 @@
-<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>King Nice Engineering V2</title><link rel='stylesheet' href='style.css'></head><body><header><h1>KING NICE ENGINEERING</h1><p>Complete MEP Solutions Under One Roof</p></header><main><section><h2>About</h2><p>Mechanical, Electrical, Plumbing, HVAC, Fire Fighting & General Supplier.</p></section><section><h2>Services</h2><ul><li>Mechanical</li><li>Electrical</li><li>Plumbing</li><li>HVAC</li><li>Fire Fighting</li><li>General Supplier</li></ul></section><section><h2>Contact</h2><p>+92 3301324607<br>+92 3358152923<br>kingniceengineering@gmail.com</p></section></main><script src='script.js'></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>King Nice Engineering | MEP Contracting & General Supplier</title>
+    <!-- FontAwesome Icons for Premium Graphics -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+    <!-- Google Fonts for Bold Branding -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Cinzel:wght@600;800&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* BRANDING DESIGN VARIABLES */
+        :root {
+            --navy-dark: #07162c;
+            --navy-main: #002147;
+            --gold-gradient: linear-gradient(135deg, #f3ca65 0%, #dfa117 50%, #b8810b 100%);
+            --gold-solid: #dfa117;
+            --light-bg: #f8fafc;
+            --white: #ffffff;
+            --text-dark: #1e293b;
+            --text-muted: #64748b;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: var(--light-bg);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        /* TOP BRANDING BAR */
+        .top-bar {
+            background-color: var(--navy-dark);
+            color: var(--white);
+            padding: 12px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.85rem;
+            border-bottom: 3px solid var(--gold-solid);
+            flex-wrap: wrap;
+        }
+
+        .top-bar .contact-info a {
+            color: var(--white);
+            text-decoration: none;
+            margin-right: 25px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .top-bar .contact-info a:hover {
+            color: var(--gold-solid);
+        }
+
+        .top-bar .ntn-badge {
+            background: var(--gold-gradient);
+            color: var(--navy-dark);
+            padding: 4px 14px;
+            border-radius: 4px;
+            font-weight: 800;
+            letter-spacing: 0.5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        /* PREMIUM BRAND LOGO & HEADER */
+        header {
+            background-color: var(--white);
+            padding: 15px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 25px rgba(0,0,0,0.06);
+        }
+
+        .brand-logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        .logo-icon-wrapper {
+            margin-right: 15px;
+            text-align: center;
+        }
+
+        .logo-icon-wrapper i.fa-crown {
+            font-size: 2.2rem;
+            background: var(--gold-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: block;
+            margin-bottom: -5px;
+        }
+
+        /* Asli Card aur Flyer Wala Logo Style */
+        .brand-text h1 {
+            color: var(--navy-main);
+            font-family: 'Cinzel', serif;
+            font-size: 2.4rem;
+            line-height: 0.9;
+            letter-spacing: 3px;
+            font-weight: 800;
+        }
+
+        .brand-text h2 {
+            color: var(--navy-dark);
+            font-size: 0.95rem;
+            font-weight: 800;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-top: 2px;
+        }
+
+        .brand-text span {
+            color: var(--text-muted);
+            font-size: 0.65rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            display: block;
+            font-weight: 700;
+            border-top: 1px solid #e2e8f0;
+            padding-top: 2px;
+            margin-top: 2px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 30px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: var(--navy-main);
+            font-weight: 700;
+            font-size: 0.9rem;
+            transition: 0.3s;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        nav ul li a:hover {
+            color: var(--gold-solid);
+        }
+
+        /* HERO HERO SECTION WITH TAGLINE */
+        .hero {
+            background: linear-gradient(rgba(0, 33, 71, 0.9), rgba(7, 22, 44, 0.95)), 
+                        url('https://unsplash.com') no-repeat center center/cover;
+            color: var(--white);
+            padding: 150px 8% 130px;
+            text-align: center;
+        }
+
+        .hero .tagline {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            color: var(--gold-solid);
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .hero h2 {
+            font-family: 'Cinzel', serif;
+            font-size: 3.5rem;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+
+        .hero h2 span {
+            background: var(--gold-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 850px;
+            margin: 0 auto 40px;
+            color: #cbd5e1;
+            font-weight: 400;
+        }
+
+        .cta-btn {
+            display: inline-block;
+            background: var(--gold-gradient);
+            color: var(--navy-dark);
+            padding: 15px 40px;
+            text-decoration: none;
+            font-weight: 800;
+            border-radius: 4px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: 0.3s;
+            box-shadow: 0 5px 20px rgba(223, 161, 23, 0.4);
+        }
+
+        .cta-btn:hover {
+            background: var(--white);
+            color: var(--navy-main);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 20px rgba(255, 255, 255, 0.2);
+        }
+
+        /* SECTIONS GENERAL */
+        section {
+            padding: 100px 8%;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 70px;
+        }
+
+        .section-header h2 {
+            color: var(--navy-main);
+            font-size: 2.5rem;
+            font-weight: 800;
+            position: relative;
+            padding-bottom: 20px;
+            display: inline-block;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .section-header h2::after {
+            content: '';
+            width: 80px;
+            height: 4px;
+            background: var(--gold-gradient);
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .section-header p {
+            color: var(--text-muted);
+            margin-top: 20px;
+            font-size: 1.15rem;
+            font-weight: 600;
+        }
+
+        /* SERVICES LUXURY CARDS */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 35px;
+        }
+
+        .service-card {
+            background-color: var(--white);
+            padding: 45px 35px;
+            border-radius: 8px;
+            box-shadow: 0 10px 35px rgba(0,0,0,0.03);
+            border-top: 5px solid var(--navy-main);
+            transition: 0.4s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-12px);
+            border-top-color: var(--gold-solid);
+            box-shadow: 0 20px 45px rgba(0,0,0,0.09);
+        }
+
+        .service-card .icon-box {
+            width: 70px;
+            height: 70px;
+            background-color: rgba(0, 33, 71, 0.04);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 30px;
+            transition: 0.3s;
+        }
+
+        .service-card:hover .icon-box {
+            background: var(--gold-gradient);
+        }
+
+        .service-card .icon-box i {
+            font-size: 2rem;
+            color: var(--navy-main);
+            transition: 0.3s;
+        }
+
+        .service-card:hover .icon-box i {
+            color: var(--navy-dark);
+        }
+
+        .service-card h3 {
+            color: var(--navy-main);
+            font-size: 1.4rem;
+            margin-bottom: 20px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .service-card ul {
+            list-style: none;
+        }
+
+        .service-card ul li {
+            font-size: 1rem;
+            color: var(--text-muted);
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            font-weight: 500;
+        }
+
+        .service-card ul li i {
+            color: var(--gold-solid);
+            font-size: 0.9rem;
+            margin-right: 12px;
+        }
+
+        /* SUPPLIER SECTION */
+        .supplier-section {
+            background-color: var(--white);
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+        }
+
+        .product-card {
+            background-color: var(--light-bg);
+            padding: 30px 20px;
+      
