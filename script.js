@@ -1,1 +1,0 @@
-console.log('King Nice Engineering V2 loaded');
