@@ -1,0 +1,189 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Colors from Flyer: Navy Blue (#0f2b46) and Gold/Yellow (#f39c12) */
+.top-bar {
+    background-color: #0f2b46;
+    color: #fff;
+    padding: 8px 40px;
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #f39c12;
+}
+
+header {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+}
+
+.brand-king {
+    font-size: 28px;
+    font-weight: bold;
+    color: #0f2b46;
+    letter-spacing: 2px;
+}
+
+.brand-sub {
+    font-size: 11px;
+    color: #f39c12;
+    font-weight: bold;
+}
+
+nav a {
+    color: #0f2b46;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #f39c12;
+}
+
+/* Hero Section with dark overlay background */
+.hero {
+    background: linear-gradient(rgba(15, 43, 70, 0.85), rgba(15, 43, 70, 0.85)), url('https://unsplash.com') no-repeat center center/cover;
+    color: white;
+    padding: 100px 40px;
+    text-align: left;
+}
+
+.hero h3 {
+    color: #f39c12;
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    max-width: 600px;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.badges {
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: #f39c12;
+}
+
+.btn {
+    background-color: #f39c12;
+    color: #0f2b46;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #0f2b46;
+}
+
+/* Services Grid */
+.services-container {
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.section-title {
+    color: #0f2b46;
+    margin-bottom: 40px;
+    font-size: 28px;
+    position: relative;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.service-card {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    border-top: 4px solid #0f2b46;
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    border-top-color: #f39c12;
+}
+
+.service-card h3 {
+    color: #0f2b46;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Footer Section */
+footer {
+    background-color: #0f2b46;
+    color: white;
+    padding: 40px 40px 20px 40px;
+}
+
+.footer-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    padding-bottom: 25px;
+}
+
+footer h3 {
+    color: #f39c12;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+footer p {
+    font-size: 14px;
+    max-width: 400px;
+    line-height: 1.6;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 12px;
+    color: #ccc;
+  }
